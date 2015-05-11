@@ -39,6 +39,11 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		AE224061F56E4F50BA9BC312 /* CDVAudioFrequency.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FD49B0953D4F96A2967B51 /* CDVAudioFrequency.m */; };
+		01BAFBA8D3674704A775B82B /* ToneReceiver.h in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0D3AC5DB34B258DAFFE32 /* ToneReceiver.h */; };
+		E82F82E6301F4D8883143905 /* ToneReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F27AC92E848399F05C9EE /* ToneReceiver.m */; };
+		073695B4EBB5478781F39D97 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69108A69AE546019826F803 /* Accelerate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		844498EFC0DB483EA3E0C700 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7A14395C6F4AC5A1535210 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +109,11 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "MiaApp/config.xml"; sourceTree = "<group>"; };
+		B1FD49B0953D4F96A2967B51 /* CDVAudioFrequency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVAudioFrequency.m"; path = "com.cellules.cordova.audiofrequency/CDVAudioFrequency.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		1FF0D3AC5DB34B258DAFFE32 /* ToneReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ToneReceiver.h"; path = "com.cellules.cordova.audiofrequency/ToneReceiver.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1F0F27AC92E848399F05C9EE /* ToneReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ToneReceiver.m"; path = "com.cellules.cordova.audiofrequency/ToneReceiver.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		F69108A69AE546019826F803 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		8E7A14395C6F4AC5A1535210 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				073695B4EBB5478781F39D97 /* Accelerate.framework in Frameworks */,
+				844498EFC0DB483EA3E0C700 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +199,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				F69108A69AE546019826F803 /* Accelerate.framework */,
+				8E7A14395C6F4AC5A1535210 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,6 +216,9 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				B1FD49B0953D4F96A2967B51 /* CDVAudioFrequency.m */,
+				1FF0D3AC5DB34B258DAFFE32 /* ToneReceiver.h */,
+				1F0F27AC92E848399F05C9EE /* ToneReceiver.m */,
 			);
 			name = Plugins;
 			path = "MiaApp/Plugins";
@@ -386,6 +403,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				AE224061F56E4F50BA9BC312 /* CDVAudioFrequency.m in Sources */,
+				01BAFBA8D3674704A775B82B /* ToneReceiver.h in Resources */,
+				E82F82E6301F4D8883143905 /* ToneReceiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
