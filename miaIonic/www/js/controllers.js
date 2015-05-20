@@ -1,7 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
-
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
@@ -17,4 +15,12 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-});
+})
+.controller('OefeningenCtrl', function($scope) {})
+
+.controller('TheorieCtrl', function($scope) {})
+
+.controller('ToolsCtrl', function($scope) {})
+
+.controller('ContactCtrl', function($scope) {})
+;
