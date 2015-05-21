@@ -8,6 +8,11 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 .pane, .item, .item-complex, .item-content {
     background-color: #313131;
 }
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-contant {
+	background-color: #212121;
+	border-color: #000;
+	border-bottom-color: transparent;
+}
 .tabs-striped .tabs {
   background-color: #3a3a3a;
   background-image: none;
