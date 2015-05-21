@@ -1,4 +1,26 @@
 /* Empty. Add your own CSS if you like */
-.background, .background .pane, .background .item, .background .item-complex .item-content{
-    background-color: #242A35;
+body, h1, h2, h3, h4, h5, h6, p, a {
+	color: #ccc;
+}
+.bar {
+	background-color: #3a3a3a !important;
+}
+.pane, .item, .item-complex, .item-content {
+    background-color: #313131;
+}
+.tabs-striped .tabs {
+  background-color: #3a3a3a;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+}
+.title, .item-divider {
+	color: #ccc !important;
+}
+.item {
+	background-color: #313131;
+	border-color: #3a3a3a;
+}
+.item-divider {
+	background-color: #3a3a3a;
 }

@@ -3,25 +3,25 @@ Create tabs with an icon and label, using the tabs-positive style.
 Each tab's child <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
-<ion-tabs class="tabs-top tabs-striped tabs-color-active-positive tabs-color-positive">
+<ion-tabs class="tabs-top tabs-striped tabs-icon-only tabs-color-active-positive tabs-color-positive">
 
   <!-- Oefeningen Tab -->
-  <ion-tab title="Oefeningen" href="#/tab/oefeningen">
+  <ion-tab title="Oefeningen" icon-on="ion-ios-compose" icon-off="ion-ios-compose-outline" href="#/tab/oefeningen">
     <ion-nav-view name="tab-oefeningen"></ion-nav-view>
   </ion-tab>
 
   <!-- Theorie Tab -->
-  <ion-tab title="Theorie" href="#/tab/theorie">
+  <ion-tab title="Theorie" icon-on="ion-ios-book" icon-off="ion-ios-book-outline" href="#/tab/theorie">
     <ion-nav-view name="tab-theorie"></ion-nav-view>
   </ion-tab>
 
   <!-- Tools Tab -->
-  <ion-tab title="Tools" href="#/tab/tools">
+  <ion-tab title="Tools" icon-on="ion-ios-calculator" icon-off="ion-ios-calculator-outline" href="#/tab/tools">
     <ion-nav-view name="tab-tools"></ion-nav-view>
   </ion-tab>
 
   <!-- Contact Tab -->
-  <ion-tab title="Contact" href="#/tab/contact">
+  <ion-tab title="Contact" icon-on="ion-ios-chatboxes" icon-off="ion-ios-chatboxes-outline" href="#/tab/contact">
     <ion-nav-view name="tab-contact"></ion-nav-view>
   </ion-tab>
 
