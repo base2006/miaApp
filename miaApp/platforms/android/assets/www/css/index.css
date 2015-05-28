@@ -82,7 +82,7 @@ h1 {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size: 20px;
+    font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
 }
@@ -95,11 +95,6 @@ h1 {
 .event.received {
     background-color:#4B946A;
     display:none;
-}
-
-#freq {
-    font-size: 20px;
-    font-weight: bold;
 }
 
 @keyframes fade {

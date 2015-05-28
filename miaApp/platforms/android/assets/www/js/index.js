@@ -44,12 +44,6 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        window.addEventListener("audiofrequency", onAudiofrequency, false);
-
-        function onAudiofrequency(e) {
-            document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
-        }
-
         console.log('Received Event: ' + id);
     }
 };
