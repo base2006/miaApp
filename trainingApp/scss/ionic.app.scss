@@ -1,0 +1,123 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// Color variables
+$main: #313131;
+$accent: #3a3a3a;
+$active: #212121;
+$blue: #2980b9;
+$text: #ccc;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Fonts
+@import "Whitehall-fontfacekit/stylesheet.css";
+
+// custom styles
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+	color: $text !important;
+	font-family: "Roboto";
+}
+h1, h2, h3, h4, h5, h6, .nav-bar-title {
+	font-family: "Whitehall";
+}
+.margin {
+	margin: 10px;
+}
+.bar {
+	background-color: $accent !important;
+	border-color: $blue !important;
+	background-image: none;
+}
+.icon-logo {
+	display: block;
+	background-image: url("../img/icons/logo.svg");
+	background-size: 30px 30px;
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 100%;
+	margin: 0;
+}
+.title {
+	color: $blue !important;
+}
+.pane, .item, .item-complex, .item-content {
+    background-color: $main;
+}
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-contant {
+	background-color: $active;
+	border-color: #000;
+	border-bottom-color: transparent;
+}
+.tabs-striped .tabs {
+  background-color: $accent;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid $accent;
+}
+.item {
+	background-color: $main;
+	border-color: $accent;
+}
+.item-divider {
+	color: $blue;
+	background-color: $accent;
+}
+.gehoor, .ritme {
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 24px;
+	width: 24px;
+	border: none;
+	float: left;
+	clear: both;
+	margin-right: 10px;
+}
+.gehoor {
+	background-image: url("../img/icons/ear-blue.svg");
+}
+.ritme {
+	background-image: url("../img/icons/metronome-blue.svg");
+}
+.stretch {
+	position: relative;
+	height: 100%;
+}
+.uitleg {
+	.tip{
+		position: absolute;
+		bottom: 80px;
+		font-style: italic;
+	}
+}
+.button-bottom {
+	background-color: $blue;
+	color: $text;
+	border: none;
+	position: absolute;
+	bottom: 10px;
+}
+.repeat {
+	float: right;
+}
