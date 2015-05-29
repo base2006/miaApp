@@ -18,9 +18,10 @@ The UI of the app is basen on Ionic. blablabla
 
 We did thisss   and thaaat   with this following code:
 
-` if code is true {
+```
+if code is true {
   much codings;
   much wow;
   };
-  `
+```
   
