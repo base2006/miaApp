@@ -1,7 +1,7 @@
 # Conservatory training application
 
 ## Purpose ##
-This application is developed for people who want to apply for the Conservatorium and want to prepare for the music theory intake.
+This application is developed for people who want to apply for the Music Conservatory and want to prepare for the music theory intake.
 
 
 
@@ -12,7 +12,7 @@ The UI of the app is basen on Ionic. blablabla
 
 ## Plugins ##
 
-** plugin naam **   is what we used to blablabla.
+**plugin naam**   is what we used to blablabla.
 
 ## Backend ##
 
