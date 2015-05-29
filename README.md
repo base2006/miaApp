@@ -24,8 +24,9 @@ if code is true {
 ```
 
 
-    hoi
+    class Something {
     doei
     niet
     chill
+    };
   
