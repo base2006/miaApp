@@ -4,12 +4,12 @@
   </ion-nav-title>
   <ion-content scroll="false">
   	<section class="stretch uitleg margin">
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae error commodi possimus dicta quam, veniam alias delectus eos consequuntur ex at illum vitae totam, enim molestias, voluptates tenetur nemo eligendi?</p>
+	  	<p>{{oefening.description}}</p>
 	  	<a href="http://www.google.nl">Link naar theorie op google</a>
 	  	<p class="tip">
 	  		Tip: Plug in your headphone for better sound quality.
 	  	</p>
-	  	<button class="button button-large button-block button-bottom" ui-sref="oefening">Go</button>
+	  	<a class="button button-large button-block button-bottom" ng-href="#/oefening/{{oefening.id}}">Go</a>
   	</section>
   </ion-content>
 </ion-view>

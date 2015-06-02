@@ -38,19 +38,19 @@ var app = angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('uitleg', {
-    url: "/uitleg",
+    url: "/uitleg/:id",
     templateUrl: "templates/uitleg.html",
     controller: "uitlegCtrl"
   })
 
   .state('oefening', {
-    url: "/oefening",
+    url: "/oefening/:id",
     templateUrl: "templates/oefening.html",
     controller: "oefeningCtrl"
   })
 
   .state('antwoord', {
-    url: "/antwoord",
+    url: "/antwoord/:id",
     templateUrl: "templates/antwoord.html",
     controller: "antwoordCtrl"
  })

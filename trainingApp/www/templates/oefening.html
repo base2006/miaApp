@@ -6,8 +6,9 @@
   	<section class="stretch">
 	  	<img src="#" alt="speaker" class="speaker">
 	  	<p>Question: <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, illum ut dolores nemo natus quasi exercitationem autem? Veniam ipsam mollitia doloremque odio nostrum unde ab ipsum asperiores! Inventore, quam laboriosam.</p>
+      <div id="freq"></div>
 	  	<button class="button button-clear icon ion-ios-loop-strong repeat"></button>
-	  	<button class="button button-block button-large icon ion-ios-mic button-bottom"></button>
+	  	<button class="button button-block button-large icon ion-ios-mic button-bottom" on-hold="frequency()" on-release="stop()"></button>
   	</section>
   </ion-content>
 </ion-view>

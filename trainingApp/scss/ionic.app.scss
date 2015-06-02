@@ -30,15 +30,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 // Fonts
-@import "Whitehall-fontfacekit/stylesheet.css";
+@import "Dancingscript/stylesheet.css";
 
 // custom styles
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text !important;
 	font-family: "Roboto";
 }
-h1, h2, h3, h4, h5, h6, .nav-bar-title {
-	font-family: "Whitehall";
+.nav-bar-title {
+	font-family: "Dancingscript";
 }
 .margin {
 	margin: 10px;
@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6, .nav-bar-title {
 }
 .title {
 	color: $blue !important;
+	font-size: 24px !important;
+	font-family: "Dancingscript";	
 }
 .pane, .item, .item-complex, .item-content {
     background-color: $main;
@@ -116,8 +118,17 @@ h1, h2, h3, h4, h5, h6, .nav-bar-title {
 	color: $text;
 	border: none;
 	position: absolute;
-	bottom: 10px;
+	bottom: 0;
+	width: 100%;
 }
+.button-bottom.activated {
+	color: $text;
+	background-color: $blue;
+}
+.button:hover{
+	color: $text;
+}
+
 .repeat {
 	float: right;
 }

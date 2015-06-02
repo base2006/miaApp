@@ -19,7 +19,12 @@
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
-    "com.ionic.keyboard"
+    "com.ionic.keyboard",
+    {
+      "locator": "https://github.com/Cellules/cordova-audiofrequency.git",
+      "id": "com.cellules.cordova.audiofrequency"
+    },
+    "cordova-plugin-media"
   ],
   "cordovaPlatforms": [
     "ios",
