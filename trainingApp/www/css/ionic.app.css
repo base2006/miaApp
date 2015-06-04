@@ -7754,6 +7754,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   bottom: 80px;
   font-style: italic; }
 
+.speaker {
+  height: 25%;
+  margin: 20px auto; }
+
 .button-bottom {
   background-color: #2980b9;
   color: #ccc;

@@ -75,7 +75,7 @@ angular.module('starter.controllers', [])
 	// show frequency
 	//$scope.onAudiofrequency = function(e){
     function onAudiofrequency(e) {
-    	$log.info("success");
+    	$log.info(e.frequency);
         document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
     }
 
