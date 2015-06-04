@@ -17,7 +17,7 @@ angular.module('starter.controllers', [])
 		{
 			id: 0,
 			name: "exercise 1",
-			description: "fldsghsklfjdhgksjhfkgjhskfjhgkjshfkgjhslfghlsjhg",
+			description: "description",
 			opdrachten: [
 				{
 					id: 0,
@@ -37,6 +37,22 @@ angular.module('starter.controllers', [])
 		}
 	]
 
+	$scope.ritmeArray = [
+		{
+			id: 0,
+			name: "exercise 1",
+			description: "beschrijving",
+			opdrachten: [
+				{
+					id: 0,
+					beschrijving: "opdracht beschrijving",
+					vraag: "vraag hier",
+					antwoord: "antwoord"
+				}
+			]
+		}
+	]
+
 })
 
 .controller('homeCtrl', function($scope) {
@@ -49,6 +65,7 @@ angular.module('starter.controllers', [])
 
 .controller('oefeningCtrl', function($scope, $stateParams, $log) {
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
+	$scope.ritme = $scope.ritmeArray[$stateParams.id];
 
 	// show frequency
 	//$scope.onAudiofrequency = function(e){
