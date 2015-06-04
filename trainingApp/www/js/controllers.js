@@ -70,6 +70,8 @@ angular.module('starter.controllers', [])
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
 	$scope.ritme = $scope.ritmeArray[$stateParams.id];
 
+	$scope.freq = 0;
+
 	// show frequency
 	//$scope.onAudiofrequency = function(e){
     function onAudiofrequency(e) {
@@ -79,6 +81,7 @@ angular.module('starter.controllers', [])
 
 	$scope.frequency = function() {
 		window.addEventListener("audiofrequency", onAudiofrequency, false);
+		$scope.freq = 440;
     }
 
     $scope.stop = function() {
