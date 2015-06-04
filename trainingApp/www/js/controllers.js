@@ -21,12 +21,15 @@ angular.module('starter.controllers', [])
 			opdrachten: [
 				{
 					id: 0,
-					beschrijving: "opdracht beschrijving",
-					vraag: "Hier de vraag?",
+					beschrijving: "Hier staat beschrijving van opdracht 1",
+					vraag: "Blablabla vraag 1",
 					antwoord: "440" 
 				},
 				{
-					id: 1
+					id: 1,
+					beschrijving: "Hier staat beschrijving van opdracht 2",
+					vraag: "Blablabla vraag 2",
+					antwoord: "222"
 				}
 			]
 		},
@@ -131,6 +134,7 @@ angular.module('starter.controllers', [])
 
 .controller('antwoordCtrl', function($scope, $stateParams, $location) {
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
+
 
 	$scope.nextOefening = function() {
 		var url = "/oefening/" + (parseInt($stateParams.id) + 1);
