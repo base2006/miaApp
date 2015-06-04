@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('appCtrl', function($scope, $ionicHistory){
+.controller('appCtrl', function($scope, $ionicHistory, $log){
 
 	// var calcWidth = document.getElementById('oef').offsetWidth;
 	// document.getElementById('oef').style.height = calcWidth + 'px';
@@ -13,6 +13,21 @@ angular.module('starter.controllers', [])
 		$ionicHistory.goBack();
 	}
 
+	$scope.freq = 0;
+	// show frequency
+    function onAudiofrequency(e) {
+        document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
+        $scope.freq = e.frequency;
+    }
+
+	$scope.frequency = function() {
+		window.addEventListener("audiofrequency", onAudiofrequency, false);
+    }
+
+    $scope.stop = function() {
+    	window.removeEventListener("audiofrequency", onAudiofrequency, false);
+    }
+
 	$scope.gehoorArray = [
 		{
 			id: 0,
@@ -23,7 +38,8 @@ angular.module('starter.controllers', [])
 					id: 0,
 					beschrijving: "Hier staat beschrijving van opdracht 1",
 					vraag: "Blablabla vraag 1",
-					antwoord: "440" 
+					antwoordLaag: 430,
+					antwoordHoog: 450 
 				},
 				{
 					id: 1,
@@ -68,25 +84,17 @@ angular.module('starter.controllers', [])
 
 .controller('oefeningCtrl', function($scope, $stateParams, $log) {
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
-	$scope.ritme = $scope.ritmeArray[$stateParams.id];
+	// $scope.ritme = $scope.ritmeArray[$stateParams.id];
 
-	$scope.freq = 0;
-
-	// show frequency
-	//$scope.onAudiofrequency = function(e){
-    function onAudiofrequency(e) {
-    	$log.info(e.frequency);
-        document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
+    $scope.check = function() {
+    	// $log.info($scope.freq);
+    	if ($scope.freq >= $scope.oefening.opdrachten[0].antwoordLaag && $scope.freq <= $scope.oefening.opdrachten[0].antwoordHoog) {
+    		$log.info("yes");
+    	} else {
+    		$log.error("epic fail");
+    	}
     }
 
-	$scope.frequency = function() {
-		window.addEventListener("audiofrequency", onAudiofrequency, false);
-		$scope.freq = 440;
-    }
-
-    $scope.stop = function() {
-    	window.removeEventListener("audiofrequency", onAudiofrequency, false);
-    }
 
 /*	// Record audio
 	var src = "myrecording.amr";
@@ -139,10 +147,10 @@ angular.module('starter.controllers', [])
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
 
 
-	$scope.nextOefening = function() {
-		var url = "/oefening/" + (parseInt($stateParams.id) + 1);
-		$location.url(url);
-	}
+	// $scope.nextOefening = function() {
+	// 	var url = "/oefening/" + (parseInt($stateParams.id) + 1);
+	// 	$location.url(url);
+	// }
 
 })
 
