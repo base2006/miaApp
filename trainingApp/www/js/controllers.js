@@ -147,10 +147,10 @@ angular.module('starter.controllers', [])
 	$scope.oefening = $scope.gehoorArray[$stateParams.id];
 
 
-	// $scope.nextOefening = function() {
-	// 	var url = "/oefening/" + (parseInt($stateParams.id) + 1);
-	// 	$location.url(url);
-	// }
+	$scope.nextOefening = function() {
+		var url = "/oefening/" + (parseInt($stateParams.id) + 1);
+		$location.url(url);
+	}
 
 })
 
