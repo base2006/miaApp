@@ -44,13 +44,13 @@ var app = angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('oefening', {
-    url: "/oefening/:id",
+    url: "/oefening/:id/:second_id",
     templateUrl: "templates/oefening.html",
     controller: "oefeningCtrl"
   })
 
   .state('antwoord', {
-    url: "/antwoord/:id",
+    url: "/antwoord/:id/:second_id",
     templateUrl: "templates/antwoord.html",
     controller: "antwoordCtrl"
  })
