@@ -112,6 +112,7 @@ angular.module('starter.controllers', [])
 	$scope.nextOefening = function() {
 		$scope.counter++;
 		var url = "/oefening/" + (parseInt($stateParams.id) + "/" + $scope.counter);
+		$log.info(url);
 		$location.url(url);
 	}
 
