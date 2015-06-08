@@ -35,10 +35,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // custom styles
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text !important;
-	font-family: "Roboto";
+	/* font-family: "Roboto"; */
+	font-family: "helvetica"; 
+
 }
 .nav-bar-title {
-	font-family: "Dancingscript";
+	font-family: "helvetica"; //"Dancingscript";
 }
 .margin {
 	margin: 10px;
@@ -60,7 +62,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .title {
 	color: $blue !important;
 	font-size: 24px !important;
-	font-family: "Dancingscript";	
+	font-family: "helvetica"; //"Dancingscript";
 }
 .pane, .item, .item-complex, .item-content {
     background-color: $main;
