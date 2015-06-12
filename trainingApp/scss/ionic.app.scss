@@ -35,8 +35,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // custom styles
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text !important;
+<<<<<<< HEAD
 	font-family: "Roboto";
 	font-size: 18px !important;
+=======
+	/* font-family: "Roboto"; */
+	font-family: "helvetica"; 
+
+>>>>>>> origin/master
 }
 .nav-bar-title {
 	font-family: "helvetica"; //"Dancingscript";
