@@ -4,10 +4,10 @@
   </ion-nav-title>
   <ion-content scroll="false">
   	<section class="stretch">
-	  	<a class="speaker" ng-click="playAudio()"><i class="icon ion-ios-loop-strong loop"></i></a>
-	  	<p class="vraag"></p>
+	  	<a class="speaker" ng-click="playAudio('370F#')"><i class="icon ion-ios-loop-strong loop"></i></a>
+	  	<p class="vraag">Zing de kleine sext op deze toon.</p>
       <div id="freq"></div>
-      <button class="button button-block button-large icon ion-ios-mic button-bottom" on-hold="frequency()" on-release="stop(); check(); naarAntwoord()"></button>
+      <button class="button button-block button-large icon ion-ios-mic button-bottom" on-hold="frequency()" on-release="stop(); check(8); naarAntwoord('9')"></button>
   	</section>
   </ion-content>
 </ion-view>
