@@ -2,10 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('appCtrl', function($scope, $ionicHistory, $log){
 
-	$scope.counter = 1;
+	$scope.counter = 0;
 	//$log.info("appCtrl counter =" + $scope.counter);
-
-	$scope.antw = "";
 
 	// var calcWidth = document.getElementById('oef').offsetWidth;
 	// document.getElementById('oef').style.height = calcWidth + 'px';
@@ -133,15 +131,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('homeCtrl', function($scope) {
-	$scope.counter = 0;
+
 })
 
 .controller('uitlegCtrl', function($scope, $stateParams) {
-	$scope.oefening = $scope.gehoorArray[$stateParams.id];
+	//$scope.oefening = $scope.gehoorArray[$stateParams.id];
 })
 
-.controller('oefeningCtrl', function($scope, $stateParams, $log, $ionicPlatform, $location, myService) {
-	$scope.oefening = $scope.gehoorArray[$stateParams.id];
+.controller('oefeningCtrl', function($scope, $rootScope, $stateParams, $log, $ionicPlatform, $location, myService, counterService) {
+	//$scope.oefening = $scope.gehoorArray[$stateParams.id];
 	// $scope.ritme = $scope.ritmeArray[$stateParams.id];
 	$scope.antwoord = $scope.antwoorden;
 
@@ -179,10 +177,11 @@ angular.module('starter.controllers', [])
     	// }
 
     	if ($scope.freq >= $scope.antwoord[nummer].antwoordLaag && $scope.freq <= $scope.antwoord[nummer].antwoordHoog) {
-    		$log.info("success");
-    		$scope.antw = "success";
+    		myService.set("success");
+    		counterService.count();
     	} else {
     		$log.error("failure not the correct note");
+    		myService.set("fail");
     	}
     }
 
@@ -201,19 +200,16 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('antwoordCtrl', function($scope, $stateParams, $location, $ionicPlatform, $log, myService) {
-	$scope.oefening = $scope.gehoorArray[$stateParams.id];
-
-	$log.info($scope.antw);
-
+.controller('antwoordCtrl', function($scope, $stateParams, $location, $ionicPlatform, $log, myService, counterService) {
+	//$scope.oefening = $scope.gehoorArray[$stateParams.id];
+	$log.info(myService.get());
 	$scope.nextOefening = function(nummer) {
 		// $scope.counter++;
 		// var url = "/oefening/" + (parseInt($stateParams.id) + "/" + $scope.counter);
 		// $log.info(url);
 		// $location.url(url);
 
-		var url = "oefeningen/oefening" + nummer + ".html";
-		$log.info(url);
+		var url = "/oefening" + nummer;
 		$location.url(url);
 	}
 
@@ -239,4 +235,19 @@ app.factory('myService', function() {
 
 })
 
+.factory('counterService', function($log) {
+	var counterService = this;
+	var counter = 0;
+
+	counterService.count = function() {
+		counter++;
+		$log.info(counter);
+	};
+
+	counterService.get = function() {
+		return counter;
+	}
+
+	return counterService;
+})
 ;
