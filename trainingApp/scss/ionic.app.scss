@@ -36,9 +36,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text !important;
 	font-family: "Roboto";
+	font-size: 18px !important;
 }
 .nav-bar-title {
-	font-family: "Dancingscript";
+	font-family: "helvetica"; //"Dancingscript";
 }
 .margin {
 	margin: 10px;
@@ -60,7 +61,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .title {
 	color: $blue !important;
 	font-size: 24px !important;
-	font-family: "Dancingscript";	
+	font-family: "helvetica"; //"Dancingscript";
 }
 .pane, .item, .item-complex, .item-content {
     background-color: $main;
@@ -71,10 +72,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	border-bottom-color: transparent;
 }
 .tabs-striped .tabs {
-  background-color: $accent;
-  background-image: none;
-  border: none;
-  border-bottom: 1px solid $accent;
+	background-color: $accent;
+	background-image: none;
+	border: none;
+	border-bottom: 1px solid $accent;
 }
 .item {
 	background-color: $main;
@@ -105,6 +106,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .stretch {
 	position: relative;
 	height: 100%;
+	padding-top: 10px;
 }
 .uitleg {
 	.tip{
@@ -114,8 +116,23 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 }
 .speaker {
+	display: block;
 	height: 25%;
-	margin: 20px auto;
+	margin: 0 auto;
+	background-image: url("../img/icons/speaker.svg") !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	.loop {
+		position: relative;
+		font-size: 30px;
+		display: block;
+		line-height: 140px;
+		text-align: center;
+	}
+}
+.vraag {
+	padding: 30px;
 }
 .button-bottom {
 	background-color: $blue;
@@ -131,8 +148,4 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .button:hover{
 	color: $text;
-}
-
-.repeat {
-	float: right;
 }

@@ -7678,7 +7678,8 @@ a.button {
 
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   color: #ccc !important;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  font-size: 18px !important; }
 
 .nav-bar-title {
   font-family: "Dancingscript"; }
@@ -7747,7 +7748,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .stretch {
   position: relative;
-  height: 100%; }
+  height: 100%;
+  padding-top: 10px; }
 
 .uitleg .tip {
   position: absolute;
@@ -7755,8 +7757,22 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   font-style: italic; }
 
 .speaker {
+  display: block;
   height: 25%;
-  margin: 20px auto; }
+  margin: 0 auto;
+  background-image: url("../img/icons/speaker.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .speaker .loop {
+    position: relative;
+    font-size: 30px;
+    display: block;
+    line-height: 140px;
+    text-align: center; }
+
+.vraag {
+  padding: 30px; }
 
 .button-bottom {
   background-color: #2980b9;
@@ -7772,6 +7788,3 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .button:hover {
   color: #ccc; }
-
-.repeat {
-  float: right; }

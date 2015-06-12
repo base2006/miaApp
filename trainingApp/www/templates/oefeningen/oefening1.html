@@ -1,0 +1,13 @@
+<ion-view hide-back-button="true">
+  <ion-nav-title class="title">
+  	oefening
+  </ion-nav-title>
+  <ion-content scroll="false">
+  	<section class="stretch">
+	  	<a class="speaker" ng-click="playAudio('349F')"><i class="icon ion-ios-loop-strong loop"></i></a>
+	  	<p class="vraag">Zing de grote terts op deze toon.</p>
+      <div id="freq"></div>
+      <button class="button button-block button-large icon ion-ios-mic button-bottom" on-hold="frequency()" on-release="stop(); check(0); naarAntwoord('1')"></button>
+  	</section>
+  </ion-content>
+</ion-view>
