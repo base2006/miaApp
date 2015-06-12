@@ -2,11 +2,13 @@
   <ion-nav-title class="title">
     antwoord
   </ion-nav-title>
-  <ion-content>
-    <p class="uitleg">{{antwoord[4].uitleg}}</p>
+  <ion-content scroll="false">
+  	<section class="stretch">
+	    <p class="uitleg">{{antwoord[4].uitleg}}</p>
 
-    <a href="#" class="theorielink">link naar theorie</a>
+	    <a href="#" class="theorielink">link naar theorie</a>
 
-    <a class="button button-block button-large icon " ng-click="nextOefening('6')"></a>
+	    <a class="button button-block button-large icon ion-ios-skipforward button-bottom" ng-click="nextOefening('6')"></a>
+    </section>
   </ion-content>
 </ion-view>
