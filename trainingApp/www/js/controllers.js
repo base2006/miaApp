@@ -35,7 +35,8 @@ angular.module('starter.controllers', [])
     	{
     		id: 0,
     		antwoordLaag: 430,
-    		antwoordHoog: 450
+    		antwoordHoog: 450,
+    		uitleg: "waarom is dit een A?"
     	},
     	{
     		id: 1,
@@ -175,13 +176,16 @@ angular.module('starter.controllers', [])
     	// } else {
     	// 	$log.error("failure not correct note");
     	// }
+		$log.info($scope.freq);
+		$log.info($scope.antwoord[nummer].antwoordLaag);
+
 
     	if ($scope.freq >= $scope.antwoord[nummer].antwoordLaag && $scope.freq <= $scope.antwoord[nummer].antwoordHoog) {
-    		myService.set("success");
+    		myService.set("juist");
     		counterService.count();
     	} else {
     		$log.error("failure not the correct note");
-    		myService.set("fail");
+    		myService.set("onjuist");
     	}
     }
 
@@ -202,7 +206,12 @@ angular.module('starter.controllers', [])
 
 .controller('antwoordCtrl', function($scope, $stateParams, $location, $ionicPlatform, $log, myService, counterService) {
 	//$scope.oefening = $scope.gehoorArray[$stateParams.id];
+	$scope.antwoord = $scope.antwoorden;
+
 	$log.info(myService.get());
+
+	
+
 	$scope.nextOefening = function(nummer) {
 		// $scope.counter++;
 		// var url = "/oefening/" + (parseInt($stateParams.id) + "/" + $scope.counter);
@@ -213,10 +222,14 @@ angular.module('starter.controllers', [])
 		$location.url(url);
 	}
 
+	$scope.naarScore = function() {
+		$location.url("/score");
+	}
+
 })
 
-.controller('scoreCtrl', function($scope, $ionicPlatform) {
-
+.controller('scoreCtrl', function($scope, $ionicPlatform, $log, counterService) {
+	$log.info(counterService.get());
 })
 
 app.factory('myService', function() {
