@@ -22,6 +22,7 @@ angular.module('starter.controllers', [])
 	// show frequency
 	function onAudiofrequency(e) {
 		document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
+		$log.info(e.frequency);
 		$scope.freq = e.frequency;
 	}
 
@@ -100,7 +101,7 @@ angular.module('starter.controllers', [])
 	$scope.gehoorArray = [
 	{
 		id: 0,
-		name: "exercise 1",
+		name: "Intervallen",
 		description: "In de volgende opdrachten hoort u een aantal tonen en krijgt u per toon een vraag. U kunt antwoord geven met de record knop.",
 		opdrachten: [
 		{
@@ -117,11 +118,6 @@ angular.module('starter.controllers', [])
 			antwoord: "222"
 		}
 		]
-	},
-	{
-		id: 1,
-		name: "exercise 2",
-		description: "skjdfha"
 	}
 	]
 
@@ -147,8 +143,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('uitlegCtrl', function($scope, $stateParams) {
+.controller('uitlegCtrl', function($scope, $stateParams, $location) {
 	//$scope.oefening = $scope.gehoorArray[$stateParams.id];
+	$scope.naarOefening = function(nummer) {
+		var url = "/oefening" + nummer;
+		$location.url("/oefening1");		
+	}
 })
 
 .controller('oefeningCtrl', function($scope, $rootScope, $stateParams, $log, $ionicPlatform, $location, myService, counterService) {
@@ -219,7 +219,9 @@ angular.module('starter.controllers', [])
 
 	$log.info(myService.get());
 
-	
+	if (myService.get() == "juist") {
+		angular.element('.check-img').css('background-image', 'url("../img/icons/check.svg")');
+	}
 
 	$scope.nextOefening = function(nummer) {
 		// $scope.counter++;

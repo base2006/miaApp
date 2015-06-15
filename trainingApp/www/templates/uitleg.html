@@ -3,24 +3,22 @@
     uitleg
   </ion-nav-title>
   <ion-content scroll="false">
-  	<section class="stretch uitleg margin">
-	  	<!-- <p>{{oefening.description}}</p>  -->
-	  	
-	  	
+  	<section class="stretch uitleg-alg">
+	  		  	
 	  	<p class="beschrijving oefening">
-	  	Een interval is de afstand tussen 2 tonen. Er zijn 8 verschillende intervallen: Prime, Secunde, Terts, Kwart, Kwint, Sext, Septiem en Octaaf. De prime, kwart, kwint en octaaf zijn rein, en de secunde, terts, sext en septiem kunnen groot of klein zijn. Als je een interval zoekt, moet je eerst een toonladder maken op de beginnoot. Als je een groot interval zoekt, maak je een majeur toonladder, en als je een klein interval zoekt, maak je een mineur toonladder.<br/>
-	  	<a ng-href="https://www.google.nl/search?q=interval" target="_self">Lees hier meer over de theorie.</a>
-	  	
+		  	<p>Een interval is de afstand tussen 2 tonen.</p><p>Er zijn 8 verschillende intervallen: Prime, Secunde, Terts, Kwart, Kwint, Sext, Septiem en Octaaf.</p><p>De prime, kwart, kwint en octaaf zijn rein, en de secunde, terts, sext en septiem kunnen groot of klein zijn.</p> <!-- Als je een interval zoekt, moet je eerst een toonladder maken op de beginnoot. Als je een groot interval zoekt, maak je een majeur toonladder, en als je een klein interval zoekt, maak je een mineur toonladder. -->
+		  	<a href="#" target="_blank" onclick="window.open('https://www.google.nl/search?q=interval+muziek', '_system', 'location=yes'); return false;">Lees hier meer over de theorie.</a>  	
 	  	</p>
-	  	
-	  	
-	  	
-	  	
+
+  		<p class="hoe-title">Hoe geef ik antwoord op een vraag?</p>
+	  	<p class="hoe">
+	  		Om de toon in de oefening vast te leggen, houd de knop ingedrukt, zing de toon en laat de knop los onder het zingen.
+	  	</p>
 	  	
 	  	<p class="tip">
-	  		Tip: Plug in your headphone for better sound quality.
+	  		Tip: Sluit je hoofdtelefoon aan voor betere kwaliteit.
 	  	</p>
-	  	<a class="button button-large button-block button-bottom" ng-href="#/oefening1">Go</a>
+	  	<button class="button button-block button-large icon button-bottom" ng-click="naarOefening(1)">Start</button>
   	</section>
   </ion-content>
 </ion-view>

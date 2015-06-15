@@ -7677,7 +7677,7 @@ a.button {
   transition-duration: 0s; }
 
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
-  color: #ccc !important;
+  color: #ccc;
   font-family: "Roboto";
   font-size: 18px !important; }
 
@@ -7685,7 +7685,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   font-family: "Dancingscript"; }
 
 .margin {
-  margin: 10px; }
+  margin: 2%; }
 
 .bar {
   background-color: #3a3a3a !important;
@@ -7748,17 +7748,27 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .stretch {
   position: relative;
-  height: 100%;
-  padding-top: 10px; }
+  height: 96%;
+  padding-top: 80px;
+  margin: 20px; }
 
-.uitleg .tip {
-  position: absolute;
-  bottom: 80px;
-  font-style: italic; }
+.uitleg-alg {
+  margin: 20px;
+  padding-top: 0; }
+  .uitleg-alg a {
+    color: #2980b9 !important; }
+  .uitleg-alg .hoe-title {
+    font-style: italic;
+    padding-top: 50px; }
+  .uitleg-alg .tip {
+    position: absolute;
+    bottom: 90px;
+    font-style: italic;
+    font-size: 14px !important; }
 
 .speaker {
   display: block;
-  height: 25%;
+  height: 35%;
   margin: 0 auto;
   background-image: url("../img/icons/speaker.svg") !important;
   background-repeat: no-repeat;
@@ -7766,13 +7776,24 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   background-size: contain; }
   .speaker .loop {
     position: relative;
-    font-size: 30px;
+    font-size: 39px;
     display: block;
-    line-height: 140px;
+    line-height: 154px;
     text-align: center; }
 
 .vraag {
-  padding: 30px; }
+  padding: 50px 0;
+  text-align: center; }
+
+.antwoord {
+  padding-top: 30px; }
+
+.check-img {
+  background-image: url("../img/icons/cross.svg");
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  margin: 0 auto 50px; }
 
 .button-bottom {
   background-color: #2980b9;
@@ -7780,7 +7801,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   border: none;
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  height: 80px; }
 
 .button-bottom.activated {
   color: #ccc;
