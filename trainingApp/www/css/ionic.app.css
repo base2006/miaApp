@@ -7787,6 +7787,21 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .antwoord {
   padding-top: 30px; }
+  .antwoord .wrap {
+    max-height: 100px; }
+    .antwoord .wrap .uitleg {
+      padding-right: 10px; }
+    .antwoord .wrap .ng-animate .scroll-bar {
+      visibility: visible !important;
+      margin-left: 5px; }
+    .antwoord .wrap .scroll-bar-v {
+      right: 1px !important; }
+      .antwoord .wrap .scroll-bar-v .scroll-bar-indicator {
+        opacity: 0.5 !important;
+        background-color: rgba(200, 200, 200, 0.7) !important; }
+    .antwoord .wrap .scroll-bar-fade-out, .antwoord .wrap .scroll-bar-indicator {
+      opacity: 0.5 !important;
+      background-color: #ccc; }
 
 .check-img {
   background-image: url("../img/icons/check.svg");

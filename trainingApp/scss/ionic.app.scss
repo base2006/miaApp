@@ -117,7 +117,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.hoe-title {
 		font-style: italic;
-		padding-top: 50px;
+		padding-top: 35px;
 	}
 	.hoe {
 	}
@@ -150,6 +150,26 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .antwoord {
 	padding-top: 30px;
+	.wrap {
+		max-height: 100px;
+		.uitleg {
+			padding-right: 10px;
+		}
+		.ng-animate .scroll-bar {
+			visibility: visible !important;
+			margin-left: 5px;
+		}
+		.scroll-bar-v {
+			right: 1px !important;
+			.scroll-bar-indicator, .scroll-bar-fade-out {
+				opacity: 1 !important;
+				background-color: rgba(200, 200, 200, 0.7)!important;
+			}
+		}
+	}
+	.theorielink {
+		color: $blue !important;
+	}
 }
 .check-img {
 	background-image: url("../img/icons/check.svg");
