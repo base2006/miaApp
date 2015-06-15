@@ -7831,3 +7831,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .button:hover {
   color: #ccc; }
+
+#score {
+  color: #ccc;
+  font-size: 5em !important;
+  text-align: center;
+  margin-top: 10%; }
+
+.advies {
+  text-align: center; }
+  .advies a {
+    color: #2980b9; }
