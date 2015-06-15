@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('appCtrl', function($scope, $ionicHistory, $log, counterService){
+.controller('appCtrl', function($scope, $ionicHistory, $log, counterService, $state){
 
 	$scope.counter = 0;
 	//$log.info("appCtrl counter =" + $scope.counter);
@@ -11,6 +11,7 @@ angular.module('starter.controllers', [])
 		$ionicHistory.clearHistory();
 		counterService.reset();
 		$state.go('home');
+		//$location.url('/home');
 	}
 
 	//Go back to previous view
