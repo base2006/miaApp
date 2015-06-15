@@ -7759,7 +7759,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     color: #2980b9 !important; }
   .uitleg-alg .hoe-title {
     font-style: italic;
-    padding-top: 50px; }
+    padding-top: 35px; }
   .uitleg-alg .tip {
     position: absolute;
     bottom: 90px;
@@ -7788,7 +7788,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .antwoord {
   padding-top: 30px; }
   .antwoord .wrap {
-    max-height: 100px; }
+    max-height: 175px; }
     .antwoord .wrap .uitleg {
       padding-right: 10px; }
     .antwoord .wrap .ng-animate .scroll-bar {
@@ -7796,12 +7796,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
       margin-left: 5px; }
     .antwoord .wrap .scroll-bar-v {
       right: 1px !important; }
-      .antwoord .wrap .scroll-bar-v .scroll-bar-indicator {
-        opacity: 0.5 !important;
+      .antwoord .wrap .scroll-bar-v .scroll-bar-indicator, .antwoord .wrap .scroll-bar-v .scroll-bar-fade-out {
+        opacity: 1 !important;
         background-color: rgba(200, 200, 200, 0.7) !important; }
-    .antwoord .wrap .scroll-bar-fade-out, .antwoord .wrap .scroll-bar-indicator {
-      opacity: 0.5 !important;
-      background-color: #ccc; }
+  .antwoord a {
+    color: #2980b9 !important; }
 
 .check-img {
   background-image: url("../img/icons/check.svg");
