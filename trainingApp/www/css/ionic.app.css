@@ -7789,6 +7789,13 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   padding-top: 30px; }
 
 .check-img {
+  background-image: url("../img/icons/check.svg");
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  margin: 0 auto 50px; }
+
+.cross-img {
   background-image: url("../img/icons/cross.svg");
   height: 150px;
   width: 150px;

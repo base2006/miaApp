@@ -21,7 +21,7 @@ angular.module('starter.controllers', [])
 	$scope.freq = 0;
 	// show frequency
 	function onAudiofrequency(e) {
-		document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
+		//document.getElementById('freq').innerHTML = ("Frequency: " + e.frequency + " Hz");
 		$log.info(e.frequency);
 		$scope.freq = e.frequency;
 	}
@@ -68,7 +68,7 @@ angular.module('starter.controllers', [])
 	},
 	{
 		id: 5,
-		antwoordLaag: 301,
+		antwoordLaag: 303,
 		antwoordHoog: 323,
 		uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
 	},
@@ -190,11 +190,11 @@ angular.module('starter.controllers', [])
     	// }
 
     	if ($scope.freq >= $scope.antwoord[nummer].antwoordLaag && $scope.freq <= $scope.antwoord[nummer].antwoordHoog) {
-    		myService.set("juist");
+    		myService.set(true);
     		counterService.count();
     	} else {
     		$log.error("failure not the correct note");
-    		myService.set("onjuist");
+    		myService.set(false);
     	}
     }
 
@@ -219,8 +219,10 @@ angular.module('starter.controllers', [])
 
 	$log.info(myService.get());
 
-	if (myService.get() == "juist") {
-		angular.element('.check-img').css('background-image', 'url("../img/icons/check.svg")');
+	$scope.class = "check-img";
+
+	$scope.imgCheck = function() {
+		return myService.get();
 	}
 
 	$scope.nextOefening = function(nummer) {

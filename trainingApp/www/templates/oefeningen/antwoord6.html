@@ -5,7 +5,8 @@
   <ion-content scroll="false">
     <section class="antwoord stretch">
 	    
-      <div class="check-img"></div>
+      <div class="check-img" ng-if="imgCheck()"></div>
+      <div class="cross-img" ng-if="!imgCheck()"></div>
 
       <p class="uitleg">{{antwoord[5].uitleg}}</p>
 
