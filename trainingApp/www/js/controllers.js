@@ -38,63 +38,63 @@ angular.module('starter.controllers', [])
 	$scope.antwoorden = [
 		{
 			id: 0,
-			antwoordLaag: 430,
-			antwoordHoog: 450,
+			antwoordLaag: 210,
+			antwoordHoog: 230,
 			uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
 		},
 		{
 			id: 1,
-			antwoordLaag: 483,
-			antwoordHoog: 503,
+			antwoordLaag: 236,
+			antwoordHoog: 256,
 			uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."	
 		},
 		{
 			id: 2,
-			antwoordLaag: 319,
-			antwoordHoog: 339,
+			antwoordLaag: 154,
+			antwoordHoog: 174,
 			uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
 
 		},
 		{
 			id: 3,
-			antwoordLaag: 483,
-			antwoordHoog: 503,
+			antwoordLaag: 236,
+			antwoordHoog: 256,
 			uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
 		},
 		{
 			id: 4,
-			antwoordLaag: 513,
-			antwoordHoog: 533,
+			antwoordLaag: 251,
+			antwoordHoog: 271,
 			uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
 		},
 		{
 			id: 5,
-			antwoordLaag: 303,
-			antwoordHoog: 323,
+			antwoordLaag: 146,
+			antwoordHoog: 166,
 			uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
 		},
 		{
 			id: 6,
-			antwoordLaag: 513,
-			antwoordHoog: 533,
+			antwoordLaag: 246,
+			antwoordHoog: 266,
 			uitleg: "Een septiem is de afstand van de 1e toon van een toonladder naar de 7e. Er bestaat een groot en een klein septiem."
 		},
 		{
 			id: 7,
-			antwoordLaag: 381,
-			antwoordHoog: 401,
+			antwoordLaag: 195,
+			antwoordHoog: 205,
 			uitleg: "Een kwint is de afstand van de 1e toon van een toonladder naar de 5e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
 		},
 		{
 			id: 8,
-			antwoordLaag: 577,
-			antwoordHoog: 597,
+			antwoordLaag: 283,
+			antwoordHoog: 303,
 			uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."
 		},
 		{
 			id: 9,
-			antwoordLaag: 381,
-			antwoordHoog: 401,
+			antwoordLaag: 185,
+			antwoordHoog: 205,
 			uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
 		}
 	]
