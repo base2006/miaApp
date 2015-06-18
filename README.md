@@ -31,6 +31,17 @@ $scope.scoreCheck = function() {
 	}
 ```
 
+```
+<p class="advies slecht" ng-if="scoreCheck() == 0">
+...
+</p>
+<p class="advies voldoende" ng-if="scoreCheck() == 1">
+...
+</p>
+<p class="advies goed" ng-if="scoreCheck() == 2">
+...
+</p>
+```
 
 COUNTER
 
