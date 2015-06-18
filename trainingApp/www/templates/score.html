@@ -7,9 +7,16 @@
 	  	<h1 id="score"> {{score}}/10</h1>
 		<p class="advies">
 		Je hebt {{score}} van de 10 vragen goed beantwoord!<br/><br/><br/><br/></p>
-		<p class="advies">
-		Neem de <a href="#" target="_blank" onclick="window.open('https://www.google.nl/search?q=interval+muziek', '_system', 'location=yes'); return false;">theorie van intervallen</a> nog een keer door of<br/>
-		druk op de 'terug-knop' om terug naar het menu te gaan.</p>
+		<p class="advies slecht" ng-if="scoreCheck() == 0">
+			Je kennis van de interval theorie is echt te mager. We adviseren je de <a href="#" target="_blank" onclick="window.open('https://www.google.nl/search?q=interval+muziek', '_system', 'location=yes'); return false;">theorie van intervallen</a> nog goed door te nemen en te oefenen.</p>
+		<p class="advies voldoende" ng-if="scoreCheck() == 1">
+			De theorie zit er bijna in, toch kun je het beste de <a href="#" target="_blank" onclick="window.open('https://www.google.nl/search?q=interval+muziek', '_system', 'location=yes'); return false;">theorie van intervallen</a> toch nog een keer door nemen, om het volledig te beheersen.
+		</p>
+		<p class="advies goed" ng-if="scoreCheck() == 2">
+			Bravo, je hebt uitstekend gepresteerd in deze oefening. De theorie zit er goed in, maar vergeet het niet te herhalen zodat het goed blijft hangen.
+		</p>
+
+
 
 		<button class="button button-block button-large icon button-bottom" ng-click="goHome()">Terug</button>
 	</section>

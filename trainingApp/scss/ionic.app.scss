@@ -21,6 +21,9 @@ $accent: #3a3a3a;
 $active: #212121;
 $blue: #2980b9;
 $text: #ccc;
+$green: #2ecc71;
+$yellow: #f1c40f;
+$red: #e74c3c;
 
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -31,15 +34,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Fonts
 @import "Dancingscript/stylesheet.css";
+@import "architects-daughter/stylesheet.css";
 
 // custom styles
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text;
 	font-family: "Roboto";
-	font-size: 18px !important;
+	font-size: 16px !important;
 }
 .nav-bar-title {
-	font-family: "Dancingscript";
+	font-family: "architects-daughter"/* "Dancingscript" */;
 }
 .margin {
 	margin: 2%;
@@ -60,8 +64,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .title {
 	color: $blue !important;
-	font-size: 24px !important;
-	font-family: "Dancingscript";
+	font-size: 20px !important;
+	font-family: "architects-daughter"/* "Dancingscript" */;
 }
 .pane, .item, .item-complex, .item-content {
     background-color: $main;
@@ -71,19 +75,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	border-color: #000;
 	border-bottom-color: transparent;
 }
-.tabs-striped .tabs {
-	background-color: $accent;
-	background-image: none;
-	border: none;
-	border-bottom: 1px solid $accent;
+.select {
+	padding: 10px 20px;
 }
 .item {
 	background-color: $main;
 	border-color: $accent;
+	padding: 16px 40px;
 }
 .item-divider {
 	color: $blue;
 	background-color: $accent;
+	font-family: "architects-daughter";
+	font-size: 18px !important;
+	padding: 10px 20px;
 }
 .gehoor, .ritme {
 	display: block;
@@ -95,7 +100,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	border: none;
 	float: left;
 	clear: both;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .gehoor {
 	background-image: url("../img/icons/ear-blue.svg");
@@ -195,6 +200,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	position: absolute;
 	bottom: 0;
 	height: 80px;
+	margin-bottom: 20px !important;
 }
 .button-bottom.activated {
 	color: $text;
@@ -208,7 +214,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: $text;
 	font-size: 5em !important;
 	text-align: center;	
-	margin-top: 10%;
 }
 
 .advies {

@@ -36,108 +36,91 @@ angular.module('starter.controllers', [])
 	}
 
 	$scope.antwoorden = [
-	{
-		id: 0,
-		antwoordLaag: 430,
-		antwoordHoog: 450,
-		uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
-	},
-	{
-		id: 1,
-		antwoordLaag: 483,
-		antwoordHoog: 503,
-		uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."	
-	},
-	{
-		id: 2,
-		antwoordLaag: 319,
-		antwoordHoog: 339,
-		uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
+		{
+			id: 0,
+			antwoordLaag: 430,
+			antwoordHoog: 450,
+			uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
+		},
+		{
+			id: 1,
+			antwoordLaag: 483,
+			antwoordHoog: 503,
+			uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."	
+		},
+		{
+			id: 2,
+			antwoordLaag: 319,
+			antwoordHoog: 339,
+			uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
 
-	},
-	{
-		id: 3,
-		antwoordLaag: 483,
-		antwoordHoog: 503,
-		uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
-	},
-	{
-		id: 4,
-		antwoordLaag: 513,
-		antwoordHoog: 533,
-		uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
-	},
-	{
-		id: 5,
-		antwoordLaag: 303,
-		antwoordHoog: 323,
-		uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
-	},
-	{
-		id: 6,
-		antwoordLaag: 513,
-		antwoordHoog: 533,
-		uitleg: "Een septiem is de afstand van de 1e toon van een toonladder naar de 7e. Er bestaat een groot en een klein septiem."
-	},
-	{
-		id: 7,
-		antwoordLaag: 381,
-		antwoordHoog: 401,
-		uitleg: "Een kwint is de afstand van de 1e toon van een toonladder naar de 5e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
-	},
-	{
-		id: 8,
-		antwoordLaag: 577,
-		antwoordHoog: 597,
-		uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."
-	},
-	{
-		id: 9,
-		antwoordLaag: 381,
-		antwoordHoog: 401,
-		uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
-	}
+		},
+		{
+			id: 3,
+			antwoordLaag: 483,
+			antwoordHoog: 503,
+			uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
+		},
+		{
+			id: 4,
+			antwoordLaag: 513,
+			antwoordHoog: 533,
+			uitleg: "Een terts is de afstand van de 1e toon van een toonladder naar de 3e. Er zijn 2 verschillende tertsen, een grote en een kleine. Een grote terts bestaat uit 2 hele afstanden, en een kleine terts bestaat uit een hele en een halve afstand."
+		},
+		{
+			id: 5,
+			antwoordLaag: 303,
+			antwoordHoog: 323,
+			uitleg: "Een secunde is de afstand van de 1e toon van een toonladder naar de 2e. Er zijn twee verschillende secundes, een grote en een kleine. Een grote secunde bestaat uit een hele afstand, en een kleine secunde bestaat uit een halve afstand. Let op: Als je een kleine secunde zoekt maakt het niet uit of je een majeur of een mineur toonladder maakt. In beide toonladders is de secunde groot. Deze moet je zelf verlagen!"
+		},
+		{
+			id: 6,
+			antwoordLaag: 513,
+			antwoordHoog: 533,
+			uitleg: "Een septiem is de afstand van de 1e toon van een toonladder naar de 7e. Er bestaat een groot en een klein septiem."
+		},
+		{
+			id: 7,
+			antwoordLaag: 381,
+			antwoordHoog: 401,
+			uitleg: "Een kwint is de afstand van de 1e toon van een toonladder naar de 5e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
+		},
+		{
+			id: 8,
+			antwoordLaag: 577,
+			antwoordHoog: 597,
+			uitleg: "Een sext is de afstand van de 1e toon van een toonladder naar de 6e. Er zijn weer twee verschillende, een grote en een kleine. Een grote sext bestaat uit een kwint en een hele afstand, en een kleine sext bestaat uit een kwint en een halve afstand."
+		},
+		{
+			id: 9,
+			antwoordLaag: 381,
+			antwoordHoog: 401,
+			uitleg: "Een kwart is de afstand van de 1e toon van een toonladder naar de 4e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
+		}
 	]
 
 	$scope.gehoorArray = [
-	{
-		id: 0,
-		name: "Intervallen",
-		description: "In de volgende opdrachten hoort u een aantal tonen en krijgt u per toon een vraag. U kunt antwoord geven met de record knop.",
-		opdrachten: [
-		{
-			second_id: 0,
-			beschrijving: "Hier staat beschrijving van opdracht 1",
-			vraag: "Zing de grote terts van de noot die u hoort, en neem deze op met de record knop",
-			antwoordLaag: 430,
-			antwoordHoog: 450 
-		},
-		{
-			second_id: 1,
-			beschrijving: "Hier staat beschrijving van opdracht 2",
-			vraag: "Blablabla vraag 2",
-			antwoord: "222"
-		}
-		]
-	}
-	]
-
-/*	$scope.ritmeArray = [
 		{
 			id: 0,
-			name: "exercise 1",
-			description: "beschrijving",
+			name: "Intervallen",
+			description: "In de volgende opdrachten hoort u een aantal tonen en krijgt u per toon een vraag. U kunt antwoord geven met de record knop.",
 			opdrachten: [
-				{
-					id: 0,
-					beschrijving: "opdracht beschrijving",
-					vraag: "vraag hier",
-					antwoord: "antwoord"
-				}
+			{
+				second_id: 0,
+				beschrijving: "Hier staat beschrijving van opdracht 1",
+				vraag: "Zing de grote terts van de noot die u hoort, en neem deze op met de record knop",
+				antwoordLaag: 430,
+				antwoordHoog: 450 
+			},
+			{
+				second_id: 1,
+				beschrijving: "Hier staat beschrijving van opdracht 2",
+				vraag: "Blablabla vraag 2",
+				antwoord: "222"
+			}
 			]
 		}
 	]
-	*/
 })
 
 .controller('homeCtrl', function($scope) {
@@ -220,8 +203,6 @@ angular.module('starter.controllers', [])
 
 	$log.info(myService.get());
 
-	$scope.class = "check-img";
-
 	$scope.imgCheck = function() {
 		return myService.get();
 	}
@@ -244,6 +225,26 @@ angular.module('starter.controllers', [])
 
 .controller('scoreCtrl', function($scope, $ionicPlatform, $log, counterService) {
 	$scope.score = counterService.get();
+	var myEl = angular.element( document.querySelector( '#score' ) );
+
+	if (counterService.get() <= 5) {
+		myEl.css('color','#e74c3c');
+	} else if (counterService.get() > 5 && counterService.get() < 9) {
+		myEl.css('color','#f1c40f');		
+	} else {
+		myEl.css('color','#2ecc71');
+	}
+
+	$scope.scoreCheck = function() {
+		if (counterService.get() <= 5) {
+			return 0;
+		} else if (counterService.get() > 5 && counterService.get() < 9) {
+			return 1;
+		} else {
+			return 2;
+		}
+	}
+
 })
 
 app.factory('myService', function() {

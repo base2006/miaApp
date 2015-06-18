@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(Dancingscript/stylesheet.css);
+@import url(architects-daughter/stylesheet.css);
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -7679,10 +7680,11 @@ a.button {
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   color: #ccc;
   font-family: "Roboto";
-  font-size: 18px !important; }
+  font-size: 16px !important; }
 
 .nav-bar-title {
-  font-family: "Dancingscript"; }
+  font-family: "architects-daughter";
+  /* "Dancingscript" */ }
 
 .margin {
   margin: 2%; }
@@ -7703,8 +7705,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .title {
   color: #2980b9 !important;
-  font-size: 24px !important;
-  font-family: "Dancingscript"; }
+  font-size: 20px !important;
+  font-family: "architects-daughter";
+  /* "Dancingscript" */ }
 
 .pane, .item, .item-complex, .item-content {
   background-color: #313131; }
@@ -7714,19 +7717,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   border-color: #000;
   border-bottom-color: transparent; }
 
-.tabs-striped .tabs {
-  background-color: #3a3a3a;
-  background-image: none;
-  border: none;
-  border-bottom: 1px solid #3a3a3a; }
+.select {
+  padding: 10px 20px; }
 
 .item {
   background-color: #313131;
-  border-color: #3a3a3a; }
+  border-color: #3a3a3a;
+  padding: 16px 40px; }
 
 .item-divider {
   color: #2980b9;
-  background-color: #3a3a3a; }
+  background-color: #3a3a3a;
+  font-family: "architects-daughter";
+  font-size: 18px !important;
+  padding: 10px 20px; }
 
 .gehoor, .ritme {
   display: block;
@@ -7738,7 +7742,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   border: none;
   float: left;
   clear: both;
-  margin-right: 10px; }
+  margin-right: 20px; }
 
 .gehoor {
   background-image: url("../img/icons/ear-blue.svg"); }
@@ -7825,7 +7829,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   border: none;
   position: absolute;
   bottom: 0;
-  height: 80px; }
+  height: 80px;
+  margin-bottom: 20px !important; }
 
 .button-bottom.activated {
   color: #ccc;
@@ -7837,8 +7842,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 #score {
   color: #ccc;
   font-size: 5em !important;
-  text-align: center;
-  margin-top: 10%; }
+  text-align: center; }
 
 .advies {
   text-align: center; }
