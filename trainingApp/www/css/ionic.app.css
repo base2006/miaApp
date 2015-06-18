@@ -7680,7 +7680,22 @@ a.button {
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   color: #ccc;
   font-family: "Roboto";
-  font-size: 16px !important; }
+  font-size: 16px; }
+
+.color-yellow {
+  color: #f1c40f; }
+
+.color-green {
+  color: #2ecc71; }
+
+.color-red {
+  color: #e74c3c; }
+
+.color-blue {
+  color: #2980b9; }
+
+.italic {
+  font-style: italic; }
 
 .nav-bar-title {
   font-family: "architects-daughter";
@@ -7757,19 +7772,26 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   margin: 20px; }
 
 .scorestretch {
-  padding-top: 0; }
+  padding-top: 30px; }
 
 .uitleg-alg {
   margin: 20px;
   padding-top: 0; }
   .uitleg-alg a {
     color: #2980b9 !important; }
+  .uitleg-alg .border {
+    padding: 10px 20px;
+    border: 1px solid #f1c40f; }
   .uitleg-alg .hoe-title {
     font-style: italic;
-    padding-top: 35px; }
+    font-size: 14px;
+    padding-top: 60px; }
+  .uitleg-alg .hoe {
+    margin: 0;
+    font-size: 14px; }
   .uitleg-alg .tip {
     position: absolute;
-    bottom: 90px;
+    bottom: 100px;
     font-style: italic;
     font-size: 14px !important; }
 
@@ -7835,6 +7857,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .button-bottom.activated {
   color: #ccc;
   background-color: #2980b9; }
+
+.mic.activated {
+  color: #ccc;
+  background-color: #e74c3c; }
 
 .button:hover {
   color: #ccc; }
