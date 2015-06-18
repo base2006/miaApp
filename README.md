@@ -48,12 +48,16 @@ $scope.scoreCheck = function() {
 COUNTER
 
 This code shows the function which does 3 things:
+
 1. .reset   resets the counter to 0.
+
 2. .count   adds 1 to the counter and logs it in the console.
+
 3. .get     returns the current value of the counter.
 
-angularJS
+
 ```
+//angularJS
 app.factory('counterService', function($log) {
 	var counterService = this;
 	var counter = 0;
