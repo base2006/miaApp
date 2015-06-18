@@ -18,16 +18,50 @@ The UI of the app is based on Ionic Framework with some added changes using Sass
 We did thisss and thaaat with this following code:
 
 ```
-if code is true {
-  much codings;
-  much wow;
-  };
+$scope.scoreCheck = function() {
+		if (counterService.get() <= 5) {
+			return 0;
+		} else if (counterService.get() > 5 && counterService.get() < 9) {
+			return 1;
+		} else {
+			return 2;
+		}
+	}
+
+app.factory('myService', function() {
+	var savedData = {}
+	function set(data) {
+		savedData = data;
+	}
+	function get() {
+		return savedData;
+	}
+
+	return {
+		set: set,
+		get: get
+	}
+
+})
+
+.factory('counterService', function($log) {
+	var counterService = this;
+	var counter = 0;
+
+	counterService.reset = function() {
+		counter = 0;
+	}
+
+	counterService.count = function() {
+		counter++;
+		$log.info(counter);
+	};
+
+	counterService.get = function() {
+		return counter;
+	}
+
+	return counterService;
+})
 ```
-
-
-    class Something {
-    doei
-    niet
-    chill
-    };
   
