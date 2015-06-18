@@ -14,9 +14,11 @@ The UI of the app is based on Ionic Framework with some added changes using Sass
 **com.cellules.cordova.audiofrequency** by Cellules is what we are using to check the frequency recorded by the microphone. We use this information to let the user answer questions by singing into the microphone.
 
 ## Backend ##
+This are a few highlights in our code we thought were interesting to point out.
 
-We did thisss and thaaat with this following code:
+SCORE CHECK
 
+Here we made a function which checks the score of the user and returns a value which will change the content.
 ```
 $scope.scoreCheck = function() {
 		if (counterService.get() <= 5) {
@@ -27,41 +29,30 @@ $scope.scoreCheck = function() {
 			return 2;
 		}
 	}
+```
 
-app.factory('myService', function() {
-	var savedData = {}
-	function set(data) {
-		savedData = data;
-	}
-	function get() {
-		return savedData;
-	}
 
-	return {
-		set: set,
-		get: get
-	}
+COUNTER
 
-})
+This code shows the function which does 3 things:
+1. .reset   resets the counter to 0.
+2. .count   adds 1 to the counter and logs it in the console.
+3. .get     returns the current value of the counter.
 
-.factory('counterService', function($log) {
+```
+app.factory('counterService', function($log) {
 	var counterService = this;
 	var counter = 0;
-
 	counterService.reset = function() {
 		counter = 0;
 	}
-
 	counterService.count = function() {
 		counter++;
 		$log.info(counter);
-	};
-
+	}
 	counterService.get = function() {
 		return counter;
 	}
-
 	return counterService;
 })
 ```
-  
