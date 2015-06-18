@@ -52,8 +52,8 @@ This code shows the function which does 3 things:
 2. .count   adds 1 to the counter and logs it in the console.
 3. .get     returns the current value of the counter.
 
+angularJS
 ```
-//angularJS
 app.factory('counterService', function($log) {
 	var counterService = this;
 	var counter = 0;
