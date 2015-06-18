@@ -81,7 +81,7 @@ angular.module('starter.controllers', [])
 		},
 		{
 			id: 7,
-			antwoordLaag: 195,
+			antwoordLaag: 185,
 			antwoordHoog: 205,
 			uitleg: "Een kwint is de afstand van de 1e toon van een toonladder naar de 5e. Het maakt niet uit of je een majeur of een mineur toonladder maakt."
 		},
