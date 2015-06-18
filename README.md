@@ -16,6 +16,7 @@ The UI of the app is based on Ionic Framework with some added changes using Sass
 ## Backend ##
 This are a few highlights in our code we thought were interesting to point out.
 
+
 SCORE CHECK
 
 Here we made a function which checks the score of the user and returns a value which will change the content.
@@ -32,8 +33,9 @@ $scope.scoreCheck = function() {
 	}
 ```
 
+The ng-if checks which value is set and displays the corresponding <p>.
 ```
-//html
+<!--html-->
 <p class="advies slecht" ng-if="scoreCheck() == 0">
 ...
 </p>
@@ -44,6 +46,7 @@ $scope.scoreCheck = function() {
 ...
 </p>
 ```
+
 
 COUNTER
 
