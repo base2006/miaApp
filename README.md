@@ -15,7 +15,7 @@ The UI of the app is based on Ionic Framework with some added changes using Sass
 
 ## Backend ##
 This are a few highlights in our code we thought were interesting to point out.
-
+ 
 
 SCORE CHECK
 
@@ -33,7 +33,7 @@ $scope.scoreCheck = function() {
 	}
 ```
 
-The ng-if checks which value is set and displays the corresponding <p>.
+The ng-if checks which value is set and displays the corresponding \<p>.
 ```
 <!--html-->
 <p class="advies slecht" ng-if="scoreCheck() == 0">
