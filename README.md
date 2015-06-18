@@ -20,6 +20,7 @@ SCORE CHECK
 
 Here we made a function which checks the score of the user and returns a value which will change the content.
 ```
+//angularJS
 $scope.scoreCheck = function() {
 		if (counterService.get() <= 5) {
 			return 0;
@@ -32,6 +33,7 @@ $scope.scoreCheck = function() {
 ```
 
 ```
+//html
 <p class="advies slecht" ng-if="scoreCheck() == 0">
 ...
 </p>
@@ -51,6 +53,7 @@ This code shows the function which does 3 things:
 3. .get     returns the current value of the counter.
 
 ```
+//angularJS
 app.factory('counterService', function($log) {
 	var counterService = this;
 	var counter = 0;
