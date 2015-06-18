@@ -11,7 +11,7 @@ The UI of the app is based on Ionic Framework with some added changes using Sass
 
 **cordova-plugin-media** by apache is what we are using to play the music notes that the users hear.
 
-**com.cellules.cordova.audiofrequency** by Cellules is what we are using to check the frequency recorded by the microphone against values set in our app.
+**com.cellules.cordova.audiofrequency** by Cellules is what we are using to check the frequency recorded by the microphone. We use this information to let the user answer questions by singing into the microphone.
 
 ## Backend ##
 
